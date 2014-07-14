@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+  <title>Login</title>
+				<link rel="stylesheet" href="../themes/final_v2.min.css" />
+<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../themes/final_v2.css" />
+	<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="../css/mystyle.css" />
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/scriptsApp.js"></script>
+		
+</head>
+ 
+<body> 
+<div data-role="page" data-theme="a" id="demo-page" class="my-page">
+    
+	<div data-role="header" style="background:#233767">
+			<button class="ui-nodisc-icon ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-btn-a" style="background:#233767; border:none;" onclick="backasa1()">Atrás</button>
+			<h1>Delito Sexual - Reglamento</h1>
+			<!--<button class="ui-nodisc-icon ui-btn ui-btn-inline ui-btn-icon-right ui-icon-home" style="background:#233767; border:none;" onclick="home()">Home</button>-->
+			<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="button ui-nodisc-icon ui-btn ui-btn-inline ui-btn-icon-right ui-icon-home" style="background:#233767; border:none;">Home</a>
+		</div>
+    <div role="main" class="ui-content" data-theme="b">
+        <ul data-role="listview" data-inset="true" data-theme="a">
+            <li><a href="#popupr_ds_1_recepcion" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_1_recepcion.jpg" class="ui-li-thumb">
+                <h2>Actividad 1 y 2</h2>
+                <p>Receción del caso y Entrevista</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ds_1_relato" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_1_relato.jpg" class="ui-li-thumb">
+                <h2>A2-Interrogatorio</h2>
+                <p>Relato de los hechos</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ds_1_antecedentes" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_1_antecedentes.jpg" class="ui-li-thumb">
+                <h2>A2-Interrogatorio</h2>
+                <p>Antecedentes Personales</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+			<li><a href="#popupr_ds_2_muestras" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_2_muestras.jpg" class="ui-li-thumb">
+                <h2>Actividad 3</h2>
+                <p>A. Recolección de muestras</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ds_2_ex-fisico" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_2_ex-fisico.jpg" class="ui-li-thumb">
+                <h2>Actividad 3</h2>
+                <p>B. Examen Físico</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ds_2_hallazgos" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ds_2_hallazgos.jpg" class="ui-li-thumb">
+                <h2>Actividad 3</h2>
+                <p>C. Registrar y documentar hallazgos, Act 4 y 5</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            
+        </ul>
+		
+<div data-role="popup" id="popupr_ds_1_recepcion" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Actividad 1 y 2</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_1_recepcion.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ds_1_relato" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Interrogatorio</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_1_relato.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ds_1_antecedentes" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Interrogatorio</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_1_antecedentes.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ds_2_muestras" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Recolección de muestras</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_2_muestras.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ds_2_ex-fisico" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Examen Físico</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_2_ex-fisico.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ds_2_hallazgos" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Documentar Hallazgos</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ds_2_hallazgos.jpg" style="display:block; margin:0 auto; max-height:532px;" alt="Paris, France">
+</div>
+    </div><!-- /content -->
+	<div>
+<button class="ui-input-btn ui-btn-b ui-btn ui-corner-all ui-shadow btn_personalnext" onclick="goSexualAbuse2()"><strong>Siguiente</strong></button>
+</div>
+<!--*********************************INICIO DE SECCIÓN POP-UP*******************************************************-->
+		<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header" data-theme="a">
+				<h2>¿Desea Salir?</h2>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">¿Esta seguro que desea regresar al menú principal?</h3>
+				<p>Perderá todo lo realizado hasta el momento</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Declinar</a>
+				<button class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow" onclick="home()">Confirmar</button>
+			</div>
+		</div>
+</div>
+</body>
+</html>

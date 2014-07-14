@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+<title>Principal</title>
+<link rel="stylesheet" href="../themes/final_v2.min.css" />
+<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../themes/final_v2.css" />
+	<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="../css/mystyle.css" />
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/scriptsApp.js"></script>
+		
+</head>
+ 
+<body> 
+<div data-role="page" data-theme="a" id="demo-page" class="my-page" >
+    <div data-role="header" style="background:#233767">
+			<button class="ui-nodisc-icon ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-btn-a" style="background:#233767; border:none;" onclick="backaca1a()">Atrás</button>
+			<h1>Edad Clínica - Reglamento</h1>
+			<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="button ui-nodisc-icon ui-btn ui-btn-inline ui-btn-icon-right ui-icon-home" style="background:#233767; border:none;">Home</a>
+		</div>
+    <div role="main" class="ui-content" data-theme="b">
+        <ul data-role="listview" data-inset="true" data-theme="a">
+            <li><a href="#popupr_ec_1_recepcion" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ec_act1-2.jpg" class="ui-li-thumb">
+                <h2>Actividad 1 y 2</h2>
+                <p>Receción del caso y Examen Clínico - Interrogatorio</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ec_1_analisis" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ec_act3-4.jpg" class="ui-li-thumb">
+                <h2>Actividad 3 y 4</h2>
+                <p>Otros exámenes</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>
+            <li><a href="#popupr_ec_1_examenes" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/r_ec_examenes.jpg" class="ui-li-thumb">
+                <h2>A2-Exámenes</h2>
+                <p>Externo y cavidad oral</p>
+                <p class="ui-li-aside">Reglamento</p>
+            </a></li>			
+        </ul>
+		
+		
+<!--*********************************INICIO DE SECCIÓN POP-UP*******************************************************-->
+	
+	<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header" data-theme="a">
+				<h2>¿Desea Salir?</h2>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">¿Esta seguro que desea regresar al menú principal?</h3>
+				<p>Perderá todo lo realizado hasta el momento</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Declinar</a>
+				<button class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow" onclick="home()">Confirmar</button>
+			</div>
+		</div>
+		
+<div data-role="popup" id="popupr_ec_1_recepcion" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Actividad 1 y 2</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ec_act1-2.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ec_1_analisis" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Otros exámenes - Actividad 3 y 4</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ec_act3-4.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupr_ec_1_examenes" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Actividad 2 - Exámenes</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/r_ec_examenes.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+</div><!-- /content -->
+	<div>
+<button class="ui-input-btn ui-btn-b ui-btn ui-corner-all ui-shadow btn_personalnext" onclick="goClinicAge2a()"><strong>Siguiente</strong></button>
+</div>
+</div>
+</body>
+</html>

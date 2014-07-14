@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "com.phonegap.example"
+    version   = "1.0.0">
+
+<name>Medicina Forense</name>
+
+<description>
+Una aplicacion especializada en los procedimientos para la realizacion de autopsias y clinicas forenses
+</description>
+
+<author href="http://asomef.org.co" email="sebasgott@gmail.com">
+Asomef
+</author>
+
+<preference name="phonegap-version" value="3.1.0" />
+<!-- ios-darkstatusbar is only supported by phonegap 3.1.0 -->
+<!-- make the statusbar black -->
+<preference name="ios-darkstatusbar" value="true" />
+
+<!-- this code makes the statusbar text white -->
+<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+    <false/>
+</gap:config-file>
+<gap:config-file platform="ios" parent="UIStatusBarStyle">
+    <string>UIStatusBarStyleLightContent</string>
+</gap:config-file>
+<!-- Icons -->
+
+<icon src="icon.png" />
+<icon src="icons/ios/icon.png" width="57" height="57" />
+<icon src="icons/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+<icon src="icons/ios/icon_at_2x.png" width="114" height="114" />
+
+<!-- Splash Screens -->
+<gap:splash src="splash.png" />
+<gap:splash src="splash/ios/Default-Landscape.png" width="1024" height="768" />
+<gap:splash src="splash/ios/Default-Portrait.png" width="768" height="1024" />
+<gap:splash src="splash/ios/Default.png" width="320" height="479" />
+<gap:splash src="splash/ios/Default_at_2x.png" width="640" height="960" />
+
+</widget>

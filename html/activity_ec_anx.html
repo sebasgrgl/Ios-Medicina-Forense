@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+  <title>Login</title>
+		<link rel="stylesheet" href="../themes/final_v2.min.css" />
+<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../themes/final_v2.css" />
+	<link rel="stylesheet" href="../themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="../css/jquery.mobile.structure-1.4.2.min.css" />
+	<link rel="stylesheet" href="../css/mystyle.css" />
+	<script src="../js/jquery-1.10.1.min.js"></script>
+	<script src="../js/jquery.mobile-1.4.2.min.js"></script>
+	<script type="text/javascript" src="../js/scriptsApp.js"></script>
+		
+</head>
+ 
+<body> 
+<div data-role="page" data-theme="a" id="demo-page" class="my-page">
+    <div data-role="header" style="background:#233767">
+			<button class="ui-nodisc-icon ui-btn ui-btn-inline ui-icon-carat-l ui-btn-icon-left ui-btn-a" style="background:#233767; border:none;" onclick="backaca1b()">Atrás</button>
+			<h1>Edad Clínica - Anexos</h1>
+			<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="button ui-nodisc-icon ui-btn ui-btn-inline ui-btn-icon-right ui-icon-home" style="background:#233767; border:none;">Home</a>
+		</div>
+    <div role="main" class="ui-content" data-theme="b">
+        <ul data-role="listview" data-inset="true" data-theme="a">
+            <li><a href="#popupa_ec_1_odonto" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/a_ec_1.jpg" class="ui-li-thumb">
+                <h2 style="font-size:15px">Anexo 1 - Características Odontológicas</h2>
+                <p style="font-size:15px">Dentición</p>
+                <p class="ui-li-aside">Anexo</p>
+            </a></li>
+            <li><a href="#popupa_ec_2_sexual" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/a_ec_2.jpg" class="ui-li-thumb">
+                <h2 style="font-size:15px">Anexo 2 - Características sexuales secundarias</h2>
+                <p style="font-size:15px">Desarrollo genital, mamario y de vello púbico</p>
+                <p class="ui-li-aside">Anexo</p>
+            </a></li>
+            <li><a href="#popupa_ec_3_desarrollo" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/a_ec_3_desarrollo.jpg" class="ui-li-thumb">
+                <h2 style="font-size:15px">Anexo 3 - Desarrollo</h2>
+                <p style="font-size:15px">Desarrollo óseo - otras pautas</p>
+                <p class="ui-li-aside">Anexo</p>
+            </a></li>
+			<li><a href="#popupa_ec_3_parametros" data-rel="popup" data-position-to="window" data-transition="fade">
+                <img src="../img/drawable/a_ec_3_parametros.jpg" class="ui-li-thumb">
+                <h2 style="font-size:15px">Anexo 3 - Parámetros</h2>
+                <p style="font-size:15px">Parámetros para evaluar segun rango de edad</p>
+                <p class="ui-li-aside">Anexo</p>
+            </a></li>
+	</ul>
+<div data-role="popup" id="popupDialog" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+			<div data-role="header" data-theme="a">
+				<h2>¿Desea Salir?</h2>
+			</div>
+			<div role="main" class="ui-content">
+				<h3 class="ui-title">¿Esta seguro que desea regresar al menú principal?</h3>
+				<p>Perderá todo lo realizado hasta el momento</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Declinar</a>
+				<button class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow" onclick="home()">Confirmar</button>
+			</div>
+		</div>	
+<div data-role="popup" id="popupa_ec_1_odonto" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Características Odontológicas</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/a_ec_1.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupa_ec_2_sexual" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Características Sexuales Secundarias</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/a_ec_2.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupa_ec_3_desarrollo" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Desarrollo</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/a_ec_3_desarrollo.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+<div data-role="popup" id="popupa_ec_3_parametros" data-overlay-theme="b" data-theme="b" data-corners="false">
+	<div data-role="header" data-theme="a">
+    <h1>Parámetros</h1>
+    </div>
+    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="../img/drawable/a_ec_3_parametros.jpg" style="max-height:512px;" alt="Paris, France">
+</div>
+</div><!--content-->
+<div>
+<button class="ui-btn ui-btn-b ui-shadow ui-corner-all btn_personalnext" onclick="goClinicAge2b()"><strong>Siguiente</strong></button>
+</div>
+</div><!-- /page -->
+
+</body>
+</html>
